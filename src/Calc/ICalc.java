@@ -22,5 +22,5 @@ public interface ICalc {
         }
     }
 
-    public double calculate(TYPE_DO type, double a,double b) throws Exception;
+    public int calculate(TYPE_DO type, int a,int b) throws Exception;
 }

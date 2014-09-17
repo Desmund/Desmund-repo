@@ -2,19 +2,19 @@ package src.Calc;
 
 public class DecimalCalc implements ICalc{
 	
-	public double add(double a,double b){
+	public int add(int a,int b){
 		return a+b;
 	}
 	
-	public double sub(double a,double b){
+	public int sub(int a,int b){
 		return a-b;
 	}
 	
-	public double mult(double a,double b){
+	public int mult(int a,int b){
 		return a*b;
 	}
 	
-	public double div(double a,double b) throws Exception{
+	public int div(int a,int b) throws Exception{
 		if(b!=0){
 			return a/b;
 		}
@@ -24,7 +24,7 @@ public class DecimalCalc implements ICalc{
 	}
 
     @Override
-    public double calculate(TYPE_DO type, double a, double b) throws Exception{
+    public int calculate(TYPE_DO type, int a, int b) throws Exception{
         switch (type){
             case ADD:
                 return add(a, b);

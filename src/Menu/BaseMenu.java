@@ -24,6 +24,15 @@ public abstract class BaseMenu {
         System.out.println(s);
     }
 
+    protected void print(int s,int type){
+        switch(type){
+            case 10:System.out.print(s);print("");break;
+            case 2:System.out.print(Integer.toBinaryString(s));print(""); break;
+            case 16:System.out.print(Integer.toHexString(s));print("");
+
+        }
+    }
+
     private static int getNumberOfOperand(){
         try{
             int num=Integer.parseInt(Utils.readStringFromConsol());

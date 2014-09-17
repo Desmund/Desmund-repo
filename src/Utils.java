@@ -16,4 +16,9 @@ public class Utils {
         int num=Integer.parseInt(readStringFromConsol());
         return num;
     }
+
+    public static int getInt(int type) throws Exception{
+        int num=Integer.parseInt(readStringFromConsol(),type);
+        return num;
+    }
 }
